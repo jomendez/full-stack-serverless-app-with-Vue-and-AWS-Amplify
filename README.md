@@ -14,7 +14,7 @@ This is basically a Full-stack serverless app using Vue and AWS Amplify, with fu
 
 - Node.js v10.x or later
 - npm v5.x or later
-- git bash 
+- git bash (if using windows) 
 
 ## Install dependencies
 
