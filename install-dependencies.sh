@@ -42,7 +42,7 @@ do
   else
       echo $package is NOT installed 
       echo " "
-      installPackage $package
+      installPackage --save $package
   fi
 done
 
