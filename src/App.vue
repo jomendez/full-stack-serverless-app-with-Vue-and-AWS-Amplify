@@ -9,17 +9,17 @@
   </div>
 </template>
 <script>
-import { AuthState, onAuthUIStateChange } from '@aws-amplify/ui-components'
-import { Auth } from 'aws-amplify';
+import { AuthState, onAuthUIStateChange } from "@aws-amplify/ui-components";
+import { Auth } from "aws-amplify";
 
-Auth.currentAuthenticatedUser().then(x=> console.log(x))
+Auth.currentAuthenticatedUser().then((x) => console.log(x));
 
 export default {
-  name: 'app',
+  name: "app",
   data() {
     return {
-      user: { },
-    }
+      user: {},
+    };
   },
   created() {
     // authentication state managament
@@ -28,7 +28,16 @@ export default {
       if (state === AuthState.SignedIn) {
         this.user = user;
       }
-    })
-  }
-}
+    });
+  },
+};
 </script>
+
+<style scoped>
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 10px);
+}
+</style>
