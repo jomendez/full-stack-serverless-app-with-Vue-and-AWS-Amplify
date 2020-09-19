@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <amplify-authenticator>
-      <div>
+      <div class="sign-out">
         <h1>Hey, {{user.username}}!</h1>
         <amplify-sign-out></amplify-sign-out>
       </div>
@@ -39,5 +39,9 @@ export default {
   justify-content: center;
   align-items: center;
   height: calc(100vh - 10px);
+}
+
+#app .sign-out {
+  min-width: 300px;
 }
 </style>
